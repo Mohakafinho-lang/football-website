@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOM SKY Sports </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background-color: #0b1d3a;
+      color: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #f5c518;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f5c518;
+    }
+
+    .hero {
+      background: url('images/Cristiano_Ronaldo_wallpaper_hd.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 8px 15px;
+      border-radius: 8px;
+    }
+
+    .section {
+      padding: 50px 80px;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #0b1d3a;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card .content {
+      padding: 15px;
+    }
+
+    .news-card h4 {
+      color: #0b1d3a;
+      margin-bottom: 10px;
+    }
+
+    .news-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #0b1d3a;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f5c518;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section {
+        padding: 40px 20px;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SOM SKY SPORT</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Follow</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Welcome to SOM SKY SPORTS</h2>
+    <p>Your daily dose of football news, matches !</p>
+  </section>
+
+  <section class="section" id="news">
+    <h3>Latest Football News</h3>
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="images/WhatsApp _2025-10-23 at 17.45.10_0367939f.jpg" alt="Match Image">
+        <div class="content">
+          <h4>"Couch Sean Dyche"</h4>
+          <p>
+            Nottingham Forest are set to face FC Porto in a crucial UEFA Europa League Group Phase match on Thursday, October 23, 2025, at The City Ground in Nottingham. The Reds, currently struggling with a winless run, have appointed Sean Dyche as their new manager following the dismissal of Ange Postecoglou. Under Postecoglou, Forest secured only one point from their first two group-stage matches, including a 2-2 draw against Real Betis and a 3-2 loss to Midtjylland 
+Reuters
+.
+
+In contrast, FC Porto are performing strongly, remaining unbeaten in the Primeira Liga with seven wins and a draw from eight matches. They have also won both of their Europa League group games, including a 2-1 victory over Red Star Belgrade 
+Reuters
+. Porto's attacking prowess, led by forward Wendel Gomes, poses a significant challenge for Forest's defense. The match is expected to be a test of Dyche's ability to instill resilience and tactical discipline in his new squad.
+          </p>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="images/WhatsApp_Image -10-23 at 17.48.53_6ecb24ff.jpg" alt="Player">
+        <div class="content">
+          <h4>Matchday 3 In Roma!</h4>
+          <p>Here’s a snapshot of AS Roma’s upcoming Matchday 3 clash in the 2025–26 UEFA Europa League:
+The Giallorossi welcome Viktoria Plzeň to the Stadio Olimpico on 23 October 2025, aiming to bounce back after a disappointing defeat in Matchday 2. Manager Gian Piero Gasperini emphasised the importance of humility and focus ahead of the fixture, warning of the hazards of under-estimating “lesser” opponents. 
+Chiesa Di Totti
++2
+AS Roma
++2
+
+From a tactical standpoint, Roma are expected to rotate key players—Leon Bailey is still working back to full match fitness while Angeliño remains sidelined. Meanwhile, Manu Koné and Neil El Aynanoui are predicted to start in midfield, reflecting a shift toward freshness and flexibility as the club juggles European and domestic commitments. 
+</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="images/WhatsApp_Image 25-10-23 at 17.48.54_7e7ec319.jpg" alt="Training">
+        <div class="content">
+          <h4>Celta Vigo are set to face Lille in the UEFA Europa League</h4>
+          <p>
+            Celta Vigo are set to face Lille in the UEFA Europa League on Thursday, October 23, 2025, at Estadio Abanca-Balaídos in Vigo. This match marks the third round of the group stage, with both teams aiming to secure vital points to strengthen their positions in the competition.
+
+Celta Vigo enter the match after a series of draws in La Liga, including a 1-1 stalemate against Real Sociedad in their most recent outing 
+El País
+. Manager Claudio Giráldez has emphasized the importance of the upcoming Europa League fixture, acknowledging the strength of the French league and the challenges posed by teams like Lille and Nice 
+Cadena SER
+. However, Celta will be without key players Jones El Abdelaoui, Williot Swedberg, and Yoel Lago due to injuries.
+
+Lille, on the other hand, are coming off a significant 1-0 victory over AS Roma in their previous Europa League match, thanks to an early goal by Hákon Arnar Haraldsson and a remarkable performance by goalkeeper Berke Özer, who saved three consecutive penalties in the final minutes 
+Reuters
+. The French side will look to build on this momentum as they travel to Spain.
+
+This encounter promises to be a closely contested match, with both teams eager to advance in the Europa League.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Top Match DAY </h3>
+    <div class="gallery">
+     
+      <img src="images/WhatsApp_Image 2025-10-23 at 17.24.47_b791dc23.jpg" alt="Football 2">
+      <img src="images/WhatsApp_Image 2025-10-23 at 17.29.57_27777c0d.jpg" alt="Football 3">
+      <img src="images/WhatsApp_Image 2025-10-23 at 17.29.57_d5c8beb3.jpg" alt="Football 4">
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Follow me for more football updates:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1ALhL5NRgr/?mibextid=wwXIfr" target="_blank" title="Facebook">🌐</a>
+      <a href="https://www.instagram.com/som__sky7?igsh=MWF1bXl0dHpvNWVobA%3D%3D&utm_source=qr" target="_blank" title="Instagram">📸</a>
+      <a href="https://x.com/hirkabadda?s=21" target="_blank" title="Twitter">🐦</a>
+      <a href="https://www.tiktok.com/@srk7777779999?_t=ZM-90n9tvKtfaq&_r=1" target="_blank" title="TikTok">▶️</a>
+    </div>
+    <p style="margin-top:15px; font-size:0.9rem;">© 2025 SOM SKY SPORTS | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
